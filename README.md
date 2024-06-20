@@ -68,16 +68,63 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
         - Redirecciones (300–399)
         - Errores de los clientes (400–499)
         - Errores de los servidores (500–599) 
-  
+
 > ¿Cómo se envía la data en un Get y cómo en un POST?
 
     En el GET, se envía data por queryString (EJ: paginafalsa/autos?id=1).
 
-    En el POST, se envía data por el body de la solicitud HTTP, utilizando el formato JSON
-    Ejemplo:
-       ```
+    En el POST, se envía data por el body de la solicitud HTTP, utilizando el formato JSON.
+    
+    
+> ¿Qué verbo http utiliza el navegador cuando accedemos a una página?
+
+    El navegador usa GET para acceder a una página.
+
+> Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de
+estructuras posibles.
+    
+    Explicación:
+    
+    JSON: Formato lígero de intercambio de datos, tanto para humanos como para máquinas.
+    JSON es un tipo de XML, pero es utilizado JSON para el intercambio de datos debido
+    a que, a nivel performance es mejor y consume menos banda ancha.
+        
+        Ejemplo:
         {
         "marca": "Ford"
         "color" : "Verde"
         }
-        ```
+
+    
+    XML:Es un formato de marcado que define reglas para codificar documentos en un formato que es legible tanto para humanos como para máquinas.
+
+    Ejemplo:
+    
+    {
+
+    <persona>
+    <nombre>Juan</nombre>
+    <edad>30</edad>
+    <ciudad>Madrid</ciudad>
+    </persona>
+        
+    }
+
+> Explicar brevemente el estándar SOAP
+    Es un protocolo estándar que define cómo dos objetos en diferentes procesos 
+    pueden comunicarse por medio de intercambio de datos XML. 
+
+> Explicar brevemente el estándar REST Full
+    REST (Representational State Transfer): Es un estilo de arquitectura para
+    diseñar servicios web. Los servicios RESTful utilizan HTTP y se basan en 
+    recursos, que son identificados por URLs.
+
+> ¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header?
+
+    Headers en un request: Son campos adicionales que se envían junto con la solicitud HTTP, proporcionando
+    información sobre la solicitud o el cliente. Pueden incluir detalles como el tipo de contenido, el método de autenticación, la 
+    codificación aceptada, etc.
+
+    Content-Type: Es un header que indica el tipo de media del recurso enviado al cliente o del recurso
+    esperado del servidor. Por ejemplo, Content-Type: application/json
+    indica que el cuerpo de la solicitud o respuesta está en formato JSON.
