@@ -75,8 +75,9 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
 
     En el POST, se envía data por el body de la solicitud HTTP, utilizando el formato JSON
     Ejemplo:
-        ```
+       ```
         {
         "marca": "Ford"
         "color" : "Verde"
         }
+        ```
