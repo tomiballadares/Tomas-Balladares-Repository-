@@ -24,7 +24,7 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
 
 ## Ejercicio 2
 
-    > ¿Qué es un servidor HTTP?
+> ¿Qué es un servidor HTTP?
 
     Un servidor HTTP (o web server, en ambitos academicos lo vi de esta manera), es software
     que comprende URLs y HTTP (Protocolo de transferencia de hipertexto) el cual, 
@@ -68,3 +68,15 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
         - Redirecciones (300–399)
         - Errores de los clientes (400–499)
         - Errores de los servidores (500–599) 
+  
+> ¿Cómo se envía la data en un Get y cómo en un POST?
+
+    En el GET, se envía data por queryString (EJ: paginafalsa/autos?id=1).
+
+    En el POST, se envía data por el body de la solicitud HTTP, utilizando el formato JSON
+    Ejemplo:
+        ```
+        {
+        "marca": "Ford"
+        "color" : "Verde"
+        }
