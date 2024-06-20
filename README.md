@@ -32,7 +32,7 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
     muchas partes que controlan cómo los usuarios de la web obtienen acceso a los archivos alojados 
     en el servidor
 
-    > ¿Qué son los verbos HTTP? Mencionar los más conocidos
+> ¿Qué son los verbos HTTP? Mencionar los más conocidos
 
     Los verbos son utilizados para poder hacerle solicitudes HTTP al servidor.
     Los mas conocidos son los siguientes:
@@ -43,7 +43,7 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
         - PUT
         - HEAD
 
-    > ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
+ > ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers?
 
     Un request, es la petición del usuario hacia el servidor. (Por ejemplo el usuario
     hace un GET a paginafalsa/autos, para obtener una lista de autos).
@@ -52,13 +52,13 @@ A continuación comenzaré con el desarrollo de los ejercicios del proceso de se
     Los headers, son campos adicionales, los cuales sirven para dar mas información acerca de la
     calidad del envío o respuesta y demás.
 
-    > ¿Qué es un queryString? (En el contexto de una url)
+> ¿Qué es un queryString? (En el contexto de una url)
 
     Un queryString es una cadena de texto que se agrega a la URL, que contiene parametros
     para que sean utilizados en el servidor web. Ejemplo: Si hacemos un GET
     paginafalsa/autos?id=1 nos devuelve el auto con ID = 1.
 
-    > ¿Qué es el responseCode? ¿Qué significado tiene los posibles valores devueltos?
+> ¿Qué es el responseCode? ¿Qué significado tiene los posibles valores devueltos?
 
     El responseCode (o statusCode), son codigos de estado que nos indican el resultado
     de la solicitud HTTP.
