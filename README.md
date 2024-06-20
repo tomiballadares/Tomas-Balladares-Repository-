@@ -111,10 +111,12 @@ estructuras posibles.
     }
 
 > Explicar brevemente el estándar SOAP
+ 
     Es un protocolo estándar que define cómo dos objetos en diferentes procesos 
     pueden comunicarse por medio de intercambio de datos XML. 
 
 > Explicar brevemente el estándar REST Full
+
     REST (Representational State Transfer): Es un estilo de arquitectura para
     diseñar servicios web. Los servicios RESTful utilizan HTTP y se basan en 
     recursos, que son identificados por URLs.
