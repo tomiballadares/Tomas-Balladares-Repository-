@@ -102,21 +102,18 @@ estructuras posibles.
     
     {
 
-    <persona>
-    <nombre>Juan</nombre>
-    <edad>30</edad>
-    <ciudad>Madrid</ciudad>
-    </persona>
+    <auto>
+    <marca>Ford</marca>
+    <color>Verde</color>
+    </auto>
         
     }
 
 > Explicar brevemente el estándar SOAP
- 
     Es un protocolo estándar que define cómo dos objetos en diferentes procesos 
     pueden comunicarse por medio de intercambio de datos XML. 
 
 > Explicar brevemente el estándar REST Full
-
     REST (Representational State Transfer): Es un estilo de arquitectura para
     diseñar servicios web. Los servicios RESTful utilizan HTTP y se basan en 
     recursos, que son identificados por URLs.
@@ -130,3 +127,12 @@ estructuras posibles.
     Content-Type: Es un header que indica el tipo de media del recurso enviado al cliente o del recurso
     esperado del servidor. Por ejemplo, Content-Type: application/json
     indica que el cuerpo de la solicitud o respuesta está en formato JSON.
+## Ejercicio 3
+1- ![GET](https://cdn.discordapp.com/attachments/381534551094198274/1253906709051871273/image.png?ex=66778f1f&is=66763d9f&hm=b61487f48439d7b0e26cb84e04450a4d9888cc79ea98565388e50e9910fe6e11&)
+2- ![POST](https://i.imgur.com/22w62Xa.png)
+3- ![GET](https://i.imgur.com/gTYWPfl.png)
+
+- Las diferencias son que, entre el GET del item **1** y del item **3**, es que, en el segundo GET, trae de la persistencia el **POST** que hicimos en el punto **2**.
+    Esto es debido a que el GET a https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json, nos da como respuesta los registros en formato JSON, traídos de una Base de Datos o de otro tipo de persistencia. En cambio a través del POST, damos de alta un registro, enviandole el JSON en este caso, como request, a traves del body. Esto, se debería mapear de cierta manera la cual se pueda persistir (Ej: Creando una clase Postulante que tenga como atributos nombre y email.)
+
+## Ejercicio 4
